@@ -1,0 +1,122 @@
+﻿@model DAENT_FRONTEND.Models.artikel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>artikel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.artikelgruppen.grtext)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.artikelgruppen.grtext)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bezeichnung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bezeichnung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vkpreis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vkpreis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lief)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lief)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ekpreis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ekpreis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lieferzeit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lieferzeit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mindbestand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mindbestand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hinweis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hinweis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mengebestellt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mengebestellt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mwst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mwst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aktiv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aktiv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inaktivam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inaktivam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.inaktivvon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.inaktivvon)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.artnr }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

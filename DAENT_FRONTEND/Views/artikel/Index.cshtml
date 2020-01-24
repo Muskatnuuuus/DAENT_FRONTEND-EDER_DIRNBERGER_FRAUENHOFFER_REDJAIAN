@@ -1,0 +1,105 @@
+﻿@model IEnumerable<DAENT_FRONTEND.Models.artikel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.artikelgruppen.grtext)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bezeichnung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vkpreis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lief)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ekpreis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lieferzeit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mindbestand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hinweis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mengebestellt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mwst)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aktiv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.inaktivam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.inaktivvon)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.artikelgruppen.grtext)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bezeichnung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vkpreis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lief)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ekpreis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lieferzeit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mindbestand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hinweis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mengebestellt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mwst)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aktiv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.inaktivam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.inaktivvon)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.artnr }) |
+            @Html.ActionLink("Details", "Details", new { id=item.artnr }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.artnr })
+        </td>
+    </tr>
+}
+
+</table>
